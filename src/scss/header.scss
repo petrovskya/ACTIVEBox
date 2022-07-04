@@ -1,0 +1,120 @@
+
+.header {
+  padding: 36px 0 120px 0;
+  background-image: url(../img/bg\ header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    background-color: rgba(37, 43, 73, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+.container {
+  position: relative;
+  z-index: 2;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  align-items: flex-start;
+  margin-bottom: 130px;
+  // position: relative;
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   left: 0;
+  //   top: 0;
+  //   border-bottom: 1px solid $_dark-grey;
+  // }
+  // padding-bottom: 4px 0;
+  border-bottom: 1px solid $_dark-grey;
+}
+.logo {
+  margin: 0 15px;
+  a {
+   font-family: 'Raleway';
+    font-size: 1.5625rem;
+    font-weight: 900;
+    color: $_dark-grey;
+   span {
+    font-weight: 400;
+    color: $_white;
+    }
+  }
+}
+.menu {
+  width: 670px;
+  margin: 0 15px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      display: block;
+      padding: 4.5px 0 40.5px 0;
+      &:hover {
+        padding-bottom: 36.5px;
+        border-bottom: 4px solid $_dark-grey;
+      }
+      &:active {
+        border-bottom: 4px solid $_red-changes;
+        padding-bottom: 36.5px;
+        transition: 0.5s;
+        transform: scale(0.98);
+      }
+      a {
+        @include h6;
+        color: $_white;
+        &:active {
+          color: $_red-changes;
+          transition: 0.5s;
+        }
+      }
+
+    }
+  }
+}
+.title-header {
+  @include h1;
+  color: $_white;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.banner-desc {
+  font-family: "Raleway";
+  font-size: $_24px;
+  font-weight: 400;
+  color: $_white;
+  text-align: center;
+  margin-bottom: 82px;
+}
+.banner-btn {
+  display: block;
+  margin: auto;
+  @include h4;
+  color: $_white;
+  width: 370px;
+  background-color: $_red;
+  line-height: 80px;
+  border: none;
+  &:hover {
+   background-color: $_red-changes;
+   transition: 0.5s;
+  }
+  &:active {
+    transition: 0.5s;
+    transform: scale(0.98);
+    box-shadow: 4px 4px 30px #FF4343;
+  }
+}
