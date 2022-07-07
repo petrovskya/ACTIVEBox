@@ -1,0 +1,81 @@
+.footer {
+  padding: 70px 0;
+  background-color: $_blue;
+  position: relative;
+}
+.container {
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content-card {
+  margin: 0 15px;
+  width: 370px;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: $_dark-blue;
+    border-radius: 15px;
+    transform: translate(2px,2px);
+    transition: 0.3s;
+  }
+}
+.footer-card-title {
+  @include h5;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 29px;
+  color: $_white;
+  transition-duration: 0.3s;
+  &:hover {
+    color: $_red;
+    transition: 0.3s;
+  }
+}
+.footer-card-desc {
+  @include h5;
+  text-align: center;
+  color: $_white;
+  transition-duration: 0.3s;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $_red;
+    transition: 0.3s;
+  }
+}
+i {
+  font-size: 18px;
+  border: 1px solid $_grey-social;
+  padding: 10px 11px;
+  width: 39px;
+  height: 39px;
+  color: $_grey-social;
+}
+
+.fa-facebook-f {
+  transition-duration: 0.4s;
+  &:hover {
+    color: $_blue-facebook;
+    transition: 0.6s;
+  }
+}
+.fa-twitter {
+  transition-duration: 0.4s;
+  &:hover {
+    color: $_light-blue-twitter;
+    transition: 0.6s;
+  }
+}
+.fa-linkedin {
+  transition-duration: 0.4s;
+  &:hover {
+    color: $_blue-linkedin;
+    transition: 0.6s;
+  }
+}
