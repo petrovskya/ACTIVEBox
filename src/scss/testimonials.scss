@@ -1,0 +1,39 @@
+.testimonials {
+  background-color: $_purple;
+  
+}
+.testimonials-wrap {
+  display: flex;
+}
+.testimonials-img {
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  // background-image: url(../img/bg\ testimonials.png);
+}
+.testimonials-desc {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.tesimonials-desc-quote {
+  display: block;
+  margin: auto;
+  font-family: "Cardo";
+  font-size: 36px;
+  color: $_white;
+  text-align: left;
+  width: 470px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.testimonials-desc-author {
+  display: block;
+  margin: auto;
+  @include h6;
+  color: $_white;
+  width: 470px;
+  text-transform: uppercase;
+}
