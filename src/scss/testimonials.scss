@@ -4,6 +4,20 @@
 }
 .testimonials-wrap {
   display: flex;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: $_purple;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $_purple;
+    border-radius: 50%;
+    margin-top: 31px;
+  }
 }
 .testimonials-img {
   width: 50%;
