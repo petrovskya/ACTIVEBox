@@ -1,0 +1,52 @@
+.ourteam {
+  padding: 114px 0;
+}
+.container {
+}
+.ourteam-wrap { 
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 0 -15px;
+}
+.ourteam-card {
+  width: 270px;
+  margin: 0 15px;
+}
+.ourteam-card-img {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 30px;
+}
+.ourteam-card-content {
+  
+}
+.ourteam-name {
+  @include h4;
+  color: $_black;
+  display: block;
+  margin-bottom: 5px;
+}
+.ourteam-post {
+  @include h4;
+  color: $_red;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.ourteam-card-text {
+  @include h5;
+  color: $_dark-grey;
+  margin-bottom: 38px;
+}
+.ourteam-card-social {
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.fa-twitter {
+}
+.fa-linkedin {
+}
