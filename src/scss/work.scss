@@ -1,0 +1,40 @@
+.work-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .work-item {
+    position: relative;
+    width: 25%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      
+    }
+    .work-content {
+     opacity: 0;
+      position: absolute;
+      background-color: $_red-img-hover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      padding: 128px 0 170px 0;
+      text-align: center;
+      .work-name {
+        @include h4;
+        color: $_white;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+      }
+      .work-desc {
+        @include h5;
+        color: $_white;
+      }
+    }
+    &:hover .work-content {
+      opacity: 1;
+    }
+  }
+ 
+}
