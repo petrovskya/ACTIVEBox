@@ -2,6 +2,11 @@
   padding: 70px 0;
   background-color: $_blue;
   position: relative;
+  animation: mymove 4s infinite;
+  @keyframes mymove {
+    from {background-color: $_blue;}
+    to {background-color: $_dark-blue;}
+  }
 }
 .container {
 }
@@ -78,4 +83,13 @@ i {
     color: $_blue-linkedin;
     transition: 0.6s;
   }
+}
+@media (max-width: 1024px) {
+  .footer-card-title {
+    font-size: 14px;
+  }
+  .footer-card-desc {
+    font-size: 14px;
+  }
+  
 }

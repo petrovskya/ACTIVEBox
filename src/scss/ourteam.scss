@@ -14,8 +14,10 @@
   margin: 0 15px;
 }
 .ourteam-card-img {
-  width: 270px;
-  height: 270px;
+  .ourteam-img {
+    width: 100%;
+    height: 100%;
+  }
   margin-bottom: 30px;
 }
 .ourteam-card-content {
@@ -46,13 +48,22 @@
   color: $_dark-grey;
   margin-bottom: 38px;
 }
-.ourteam-card-social {
+
+@media (max-width: 1170px) {
+  .container {
+    max-width: 1024px;
+  }
+  .ourteam-card {
+    width: 230px;
+  }
 }
-.fa-brands {
-}
-.fa-facebook-f {
-}
-.fa-twitter {
-}
-.fa-linkedin {
+@media (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
+  .ourteam-card {
+    width: 220px;
+    justify-content: space-between;
+    
+  }
 }

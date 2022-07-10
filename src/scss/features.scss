@@ -46,3 +46,34 @@
     margin-bottom: 0;
   }
 }
+@media (max-width: 1170px) {
+  .container {
+    max-width: 1024px;
+    .features-card {
+      width: 320px;
+    }
+    .features-card-title {
+      font-size: 20px;
+    }
+    .features-card-text {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
+  .features-card {
+    width: 314px;
+  }
+}
+@media (max-width: 970px) {
+  .features-card {
+    margin-bottom: 0;
+    &:nth-last-child(-n+4) {
+      margin-top: 100px;
+    }
+  }
+  
+}

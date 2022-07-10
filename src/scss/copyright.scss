@@ -1,6 +1,7 @@
 .copyright {
   background-color: $_dark-blue;
   padding: 24px 0;
+  
 }
 
 .copyright-wrap {
@@ -18,5 +19,12 @@
   }
   span {
     color: $_white;
+  }
+  
+}
+@media (max-width: 1024px) {
+  .copyright-wrap-text {
+    font-size: 14px;
+
   }
 }

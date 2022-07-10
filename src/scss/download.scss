@@ -42,3 +42,14 @@
     box-shadow: 4px 4px 30px #FF4343;
   }
 }
+@media (max-width: 1024px) {
+  .download-title {
+    font-size: 24px;
+  }
+  .download-desc {
+    font-size: 14px;
+  }
+  .download-link {
+    width: 310px;
+  }
+}
