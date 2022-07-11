@@ -67,3 +67,37 @@
     
   }
 }
+@media (max-width: 670px) {
+  .ourteam {
+    padding: 35px 0;
+  }
+  .ourteam-wrap {
+    flex-direction: column;
+    // margin: auto;
+  }
+  .ourteam-card {
+    width: 90%;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .ourteam-card-text {
+      font-size: 18px;
+      width: 95%;
+
+    }
+  }
+  a {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    i {
+      font-size: 25px;
+      padding: 15px 15px;
+      width: 55px;
+      height: 55px;
+    }
+    
+  }
+}

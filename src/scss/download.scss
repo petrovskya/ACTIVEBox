@@ -53,3 +53,19 @@
     width: 310px;
   }
 }
+@media  (max-width: 670px) {
+  .download {
+    padding: 45px 0;
+  }
+  .download-title {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .download-desc {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .download-link {
+    width: 270px;
+  }
+}

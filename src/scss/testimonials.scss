@@ -78,3 +78,20 @@
     margin-top: 24px;
   }
 }
+@media (max-width: 670px) {
+  .testimonials-wrap {
+    flex-direction: column;
+  }
+  .testimonials-img {
+    width: 100%;
+  }
+  .testimonials-desc {
+    width: 100%;
+    padding: 23px 0;
+    text-align: center;
+    .tesimonials-desc-quote {
+      text-align: center;
+      max-width: 275px;
+    }
+  }
+}

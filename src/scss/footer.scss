@@ -85,6 +85,9 @@ i {
   }
 }
 @media (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
   .footer-card-title {
     font-size: 14px;
   }
@@ -93,3 +96,29 @@ i {
   }
   
 }
+@media  (max-width: 670px) {
+  .footer {
+    padding: 35px;
+  }
+  .container {
+   max-width: 320px;
+  }
+  .footer-content {
+    display: block;
+    margin: auto;
+  }
+  .footer-content-card {
+    width: 90%;
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+     margin-right: 17px;
+     &:last-child {
+      margin-right: 0;
+     }
+    }
+  }
+  
+ }

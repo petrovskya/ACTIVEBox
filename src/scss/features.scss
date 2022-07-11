@@ -77,3 +77,29 @@
   }
   
 }
+@media (max-width: 670px) {
+  .features {
+    padding: 35px 0;
+  }
+  .features-wrap {
+    display: block;
+  }
+  .features-card {
+    width: 70%;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      box-shadow: 0 0 0px rgba(77, 74, 74,0.6);
+      border-radius: 5px;
+      transform: scale(1.01);
+      transition: 0.9s;
+    }
+    .features-card-text {
+      width: 80%;
+      margin: auto;
+      font-size: 14px;
+    }
+  }
+}
