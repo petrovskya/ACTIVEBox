@@ -2,69 +2,76 @@
   padding: 114px 0;
   background-color: $_white;
 }
-.container {
-}
-.download-wrap {
- 
-}
+
 .download-title {
+  margin-bottom: 5px;
   @include h3;
   color: black;
-  margin-bottom: 5px;
   text-align: center;
 }
+
 .download-desc {
+  margin-bottom: 50px;
   @include h5;
   color: black;
-  margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
 }
+
 .download-link {
   display: block;
+  width: 370px;
   margin: auto;
   background-color: $_red;
-  line-height: 80px;
   text-align: center;
-  width: 370px;
+  line-height: 80px;
+  transition-duration: 0.5s;
+
   a {
     @include h4;
     color: $_white;
   }
-  transition-duration: 0.5s;
+
   &:hover {
     background-color: $_red-changes;
     transition: 0.5s;
   }
+
   &:active {
-    transition: 0.5s;
+    box-shadow: 4px 4px 30px #ff4343;
     transform: scale(0.98);
-    box-shadow: 4px 4px 30px #FF4343;
+    transition: 0.5s;
   }
 }
+
 @media (max-width: 1024px) {
   .download-title {
     font-size: 24px;
   }
+
   .download-desc {
     font-size: 14px;
   }
+
   .download-link {
     width: 310px;
   }
 }
-@media  (max-width: 670px) {
+
+@media (max-width: 670px) {
   .download {
     padding: 45px 0;
   }
+
   .download-title {
-    font-size: 18px;
     margin-bottom: 22px;
+    font-size: 18px;
   }
+
   .download-desc {
-    font-size: 13px;
     margin-bottom: 13px;
+    font-size: 13px;
   }
+
   .download-link {
     width: 270px;
   }

@@ -1,30 +1,24 @@
 @mixin h1 {
-  font-family: 'Raleway';
   font-size: $_64px;
   font-weight: 900;
 }
 @mixin h2 {
-  font-family: 'Raleway';
   font-size: $_36px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 @mixin h3 {
-  font-family: 'Raleway';
   font-size: $_30px;
   font-weight: 700;
 }
 @mixin h4 {
-  font-family: 'Raleway';
   font-size: $_24px;
   font-weight: 900;
 }
 @mixin h5 {
-  font-family: 'Raleway';
   font-size: $_18px;
   font-weight: 400;
 }
 @mixin h6 {
-  font-family: 'Raleway';
   font-size: $_13px;
   font-weight: 700;
 }

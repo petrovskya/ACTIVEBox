@@ -1,101 +1,112 @@
 .features {
   padding: 125px 0;
 }
-.container {
-}
+
 .features-wrap {
-  margin: 0 -15px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
+
 .features-card {
-  margin: 0 15px;
   width: 370px;
   margin: auto;
-  text-align: center;
   margin-bottom: 100px;
+  text-align: center;
   transition-duration: 0.9s;
+
   &:hover {
-    box-shadow: 20px 20px 40px rgba(77, 74, 74,0.6);
     border-radius: 5px;
-    transform: scale(1.05) translate(5px,0);
+    box-shadow: 20px 20px 40px rgba(77, 74, 74, 0.6);
+    transform: scale(1.05) translate(5px, 0);
     transition: 0.9s;
   }
+
   .features-card-img {
     margin-bottom: 65px;
     transition-duration: 2s;
+
     &:hover {
-      transition: 2s;
       transform: rotate(360deg) scale(1.1);
+      transition: 2s;
     }
   }
+
   .features-card-title {
     margin-bottom: 45px;
     @include h4;
     color: $_black;
   }
+
   .features-card-text {
     @include h5;
     color: $_dark-grey;
     text-align: center;
+
     &:hover {
       color: $_red;
     }
   }
-  &:nth-last-child(-n+3) {
+
+  &:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
+
 @media (max-width: 1170px) {
-  .container {
-    max-width: 1024px;
-    .features-card {
-      width: 320px;
-    }
-    .features-card-title {
-      font-size: 20px;
-    }
-    .features-card-text {
-      font-size: 18px;
-    }
+  .features-card {
+    width: 320px;
+  }
+
+  .features-card-title {
+    font-size: 20px;
+  }
+
+  .features-card-text {
+    font-size: 18px;
   }
 }
+
 @media (max-width: 1024px) {
-  .container {
-    max-width: 984px;
-  }
   .features-card {
     width: 314px;
   }
 }
+
 @media (max-width: 970px) {
   .features-card {
     margin-bottom: 0;
-    &:nth-last-child(-n+4) {
+
+    &:nth-last-child(-n + 4) {
       margin-top: 100px;
     }
   }
-  
 }
+
 @media (max-width: 670px) {
   .features {
     padding: 35px 0;
   }
+
   .features-wrap {
     display: block;
   }
+
   .features-card {
     width: 70%;
     margin-bottom: 50px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     &:hover {
-      box-shadow: 0 0 0px rgba(77, 74, 74,0.6);
       border-radius: 5px;
+      box-shadow: 0 0 0px rgba(77, 74, 74, 0.6);
       transform: scale(1.01);
       transition: 0.9s;
     }
+
     .features-card-text {
       width: 80%;
       margin: auto;

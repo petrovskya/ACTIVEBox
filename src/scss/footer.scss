@@ -1,124 +1,113 @@
 .footer {
   padding: 70px 0;
   background-color: $_blue;
-  position: relative;
-  animation: mymove 4s infinite;
-  @keyframes mymove {
-    from {background-color: $_blue;}
-    to {background-color: $_dark-blue;}
-  }
 }
-.container {
-}
+
 .footer-wrap {
-  display: flex;
-  justify-content: space-between;
   margin: 0 -15px;
-  flex-direction: column;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-content-card {
-  margin: 0 15px;
   width: 370px;
+  margin: 0 15px;
   transition-duration: 0.3s;
-  &:hover {
-    background-color: $_dark-blue;
-    border-radius: 15px;
-    transform: translate(2px,2px);
-    transition: 0.3s;
-  }
 }
+
 .footer-card-title {
-  @include h5;
-  font-weight: 700;
-  text-align: center;
   margin-bottom: 29px;
+  @include h4;
   color: $_white;
+  text-align: center;
   transition-duration: 0.3s;
+
   &:hover {
     color: $_red;
     transition: 0.3s;
   }
 }
+
 .footer-card-desc {
   @include h5;
-  text-align: center;
   color: $_white;
+  text-align: center;
   transition-duration: 0.3s;
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: $_red;
-    transition: 0.3s;
-  }
 }
+
 i {
-  font-size: 18px;
-  border: 1px solid $_grey-social;
   padding: 10px 11px;
   width: 39px;
   height: 39px;
+  border: 1px solid $_grey-social;
+  font-size: 18px;
   color: $_grey-social;
 }
 
 .fa-facebook-f {
   transition-duration: 0.4s;
+
   &:hover {
     color: $_blue-facebook;
     transition: 0.6s;
   }
 }
+
 .fa-twitter {
   transition-duration: 0.4s;
+
   &:hover {
     color: $_light-blue-twitter;
     transition: 0.6s;
   }
 }
+
 .fa-linkedin {
   transition-duration: 0.4s;
+
   &:hover {
     color: $_blue-linkedin;
     transition: 0.6s;
   }
 }
+
 @media (max-width: 1024px) {
-  .container {
-    max-width: 984px;
-  }
   .footer-card-title {
     font-size: 14px;
   }
+
   .footer-card-desc {
     font-size: 14px;
   }
-  
 }
-@media  (max-width: 670px) {
+
+@media (max-width: 670px) {
   .footer {
     padding: 35px;
   }
-  .container {
-   max-width: 320px;
-  }
+
   .footer-content {
     display: block;
     margin: auto;
   }
+
   .footer-content-card {
     width: 90%;
     margin-bottom: 70px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     a {
-     margin-right: 17px;
-     &:last-child {
-      margin-right: 0;
-     }
+      margin-right: 17px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
-  
- }
+}

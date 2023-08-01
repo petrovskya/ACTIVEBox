@@ -1,32 +1,33 @@
 .copyright {
-  background-color: $_dark-blue;
   padding: 24px 0;
-  
+  background-color: $_dark-blue;
 }
 
 .copyright-wrap {
-  margin: 0 -15px; 
+  margin: 0 -15px;
 }
 .copyright-wrap-text {
   width: 370px;
-  margin: 0 15px;
+  margin: auto;
   @include h5;
   color: $_grey-copyright;
   text-align: center;
-  margin: auto;
+
   p {
     display: block;
   }
+
   span {
     color: $_white;
   }
-  
 }
+
 @media (max-width: 1024px) {
   .copyright-wrap-text {
     font-size: 14px;
   }
 }
+
 @media (max-width: 670px) {
   .copyright-wrap-text {
     width: 90%;
